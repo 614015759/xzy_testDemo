@@ -13,8 +13,7 @@ import java.util.Date;
 public class User {
 
     //对应数据库中的主键（uuid，自增id，雪花算法）
-
-    @TableId(type = IdType.AUTO) //全局唯一id   默认方案
+    @TableId(type = IdType.AUTO) //配置主键策略  这是一个枚举类  具体的可以进源码看看
     private Long id;
     private String name;
     private Integer age;
@@ -24,7 +23,7 @@ public class User {
     @TableField(fill = FieldFill.INSERT)
     private Date createTime;
 
-    @TableField(fill = FieldFill.INSERT_UPDATE)
+    @TableField(fill = FieldFill.INSERT_UPDATE)  //配置插入时时间自动更新  这里需要在handler中配置他的填充策略
     private Date updateTime;
 
     @Version  //乐观锁version注解
