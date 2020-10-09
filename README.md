@@ -1,8 +1,7 @@
-# 狂神说Mybatis_Plus学习笔记
+# Mybatis_Plus学习笔记
 
 <a id = "_top"></a>
 
-###  Mybatis_Plus学习记
    <a href="https://mybatis.plus/guide/quick-start.html#添加依赖" rel="nofollow" target="_self"> · mybatis_plus官方文档参考</a>
 
    <a href="https://github.com/614015759/xzy_testDemo" rel="nofollow" target="_self"> · mybatis_plus参考源码下载</a>
